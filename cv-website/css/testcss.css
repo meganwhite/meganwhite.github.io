@@ -1,0 +1,323 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900,300italic");
+
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+
+/* Custom CSS */
+body{
+  font-family: 'Source Sans Pro';
+  font-weight: 300;
+  color: #5d5d5d;
+  font-size: 14pt;
+  line-height: 1.75em;
+  margin-left:2rem;
+  margin-right:2rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #252122;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 1.75em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.35em;
+}
+
+header {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  max-width: 1400px;
+}
+header ul {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 0;
+}
+header a{
+  padding: 0 0 0 2em;
+  text-decoration: none;
+}
+
+.banner {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  background: #f2f2f2;
+}
+
+.banner .text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.img-container{
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+img{
+  width: 100%;
+  height: 100%; 
+}
+  
+.main-text h2{
+  padding-top: 1em;
+  padding-bottom: .5em;
+}
+
+table {
+  text-align: left;
+  width: 100%;
+}
+
+tr:nth-child(odd) {background-color: #f2f2f2;}
+
+td {
+  padding: .75em;
+}
+
+th {
+  background-color: #ff420c;
+  color: white;
+  padding: .75em;
+  font-weight: 700;
+}
+
+.misc ul li{
+  padding-bottom: .5em;
+}
+
+.button-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px 0 10px 0;
+}
+
+.button-box button {
+  background-color: slategray;
+  font-size: 70%;
+  font-weight: 700;
+  border: 0;
+  width: 45%;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 20px 60px 20px 60px;
+  text-align: center;
+}
+
+.button-box button a {
+  text-decoration: none;
+  color: white;
+}
+
+.misc {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  align-items: center;
+  width: 100%;
+  background:  #ff420c;
+}
+
+.misc .text {
+  width: 50%;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: .75em;
+}
+
+.misc .text h2{
+  color: white;
+  padding-top: .5em;
+}
+
+.misc img {
+  width: 50%;
+  height: 23em;
+}
+
+
+.bottom-banner {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background:#ff420c;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.bottom-banner .text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding-left: 1em;
+}
+
+.bottom-banner h2 {
+ color: white;
+ padding-bottom: .5em;
+}
+
+.bottom-banner img{
+  padding-left: 0.5em;
+}
+
+@media (max-width: 671px){
+.bottom-banner img{
+  height: 18em;
+}
